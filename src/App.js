@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { StoreProvider, useStoreRehydrated } from 'easy-peasy'
+import ErrorBoundary from './components/ErrorBoundary'
+import AppRouter from './components/Router'
+import store from './utils/Redux'
+import Loader from './components/Loader'
+import './App.css'
 
 function App() {
+  function WaitForStateRehydration({ children }) {
+    const isRehydrated = useStoreRehydrated()
+    return isRehydrated ? children : <Loader />
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <ErrorBoundary>
+        <StoreProvider store={store}>
+          <WaitForStateRehydration>
+            <AppRouter />
+          </WaitForStateRehydration>
+        </StoreProvider>
+      </ErrorBoundary>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

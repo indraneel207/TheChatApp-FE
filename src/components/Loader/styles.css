@@ -1,0 +1,14 @@
+.loader-container {
+  width: 75%;
+  height: 80vh;
+  background-color: white;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  height: 100%;
+}

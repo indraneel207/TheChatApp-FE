@@ -1,0 +1,238 @@
+.dashboard-container {
+  width: 75%;
+  height: 80vh;
+  background-color: white;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  display: flex;
+  flex-direction: row;
+}
+
+.dashboard-sidebar {
+  width: 30%;
+  border-right: 0.2rem solid #30538d;
+}
+
+.dashboard-main {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-message-header-container {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+  border-bottom: 0.2rem solid #30538d;
+}
+
+.dashboard-message-header-icon {
+  height: 50%;
+  margin-right: 15px;
+}
+
+.dashboard-message-header-text {
+  margin: 0%;
+  font-size: 18px;
+  font-weight: bold;
+  color: #30538d;
+}
+
+.dashboard-message-container {
+  height: 75%;
+  padding: 1rem;
+  overflow: scroll;
+}
+
+.dashboard-reply-container {
+  border-top: 0.2rem solid #30538d;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.dashboard-reply-input {
+  width: 65%;
+  height: 35%;
+  font-size: large;
+  border: 0px;
+  border-bottom: 0.15rem solid #30538d;
+}
+
+.dashboard-reply-button {
+  width: 20%;
+  height: 35%;
+  font-size: 16px;
+  background-color: #3075a0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.dashboard-reply-button:hover {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+}
+
+.dashboard-each-message-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1rem 0px;
+}
+
+.dashboard-message-left-direction {
+  justify-content: flex-start;
+}
+
+.dashboard-message-right-direction {
+  justify-content: flex-end;
+}
+
+.dashboard-message-text-container {
+  min-width: 15%;
+  width: fit-content;
+  max-width: 45%;
+  padding: 0.5rem 1rem 1.2rem;
+  background-color: rgba(48, 117, 160, 0.2);
+  border: 1px solid #30538d;
+  border-radius: 3px;
+  position: relative;
+}
+
+.dashboard-message-text {
+  margin: 0px;
+  font-size: 18px;
+}
+
+.dashboard-message-text-date {
+  position: absolute;
+  bottom: 2px;
+  right: 5px;
+  font-size: 10px;
+  margin: 0px;
+}
+
+.arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #30538d;
+}
+
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #30538d;
+}
+
+.dashboard-receiver-message-text {
+  max-width: 45%;
+  right: 0px;
+}
+
+/* Dashboard Sidebar styles */
+
+.dashboard-sidebar-header-container {
+  height: 15%;
+  border-bottom: 0.2rem solid #30538d;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.dashboard-sidebar-header-icon {
+  height: 80%;
+}
+
+.dashboard-sidebar-header-icon-logout {
+  width: 15%;
+  cursor: pointer;
+}
+
+.dashboard-sidebar-header-sub {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dashboard-sidebar-header-sub-sub {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboard-sidebar-header-text {
+  font-size: 24px;
+  font-weight: 600;
+  color: #30538d;
+  margin: 0%;
+}
+
+.dashboard-sidebar-header-text-normal {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  margin: 0%;
+}
+
+.dashboard-sidebar-friends-container {
+  overflow: scroll;
+}
+
+.dashboard-sidebar-friends-each {
+  height: 15%;
+  border-top: 0.1rem solid #30538d;
+  border-bottom: 0.1rem solid #30538d;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-sidebar-friends-each-active {
+  height: 15%;
+  background-color: rgba(48, 117, 160, 0.2);
+  border-top: 0.1rem solid #30538d;
+  border-bottom: 0.1rem solid #30538d;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-sidebar-friends-header-text {
+  font-weight: 600;
+  color: #30538d;
+}
+
+.dashboard-sidebar-friends-icon {
+  width: 12%;
+  margin-left: 3%;
+  margin-right: 1%;
+}
+
+.dashboard-sidebar-friends-text {
+  font-size: 16px;
+  padding: 2%;
+}
+
+.dashboard-sidebar-search-container {
+  height: 10%;
+  padding-left: 3%;
+}
+
+.dashboard-sidebar-search-text {
+  width: 95%;
+  height: 35%;
+  font-size: large;
+  border: 0px;
+  border-bottom: 0.15rem solid #30538d;
+  margin: 0%;
+}
